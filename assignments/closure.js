@@ -1,5 +1,22 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function houseBuilder(bedrooms, bathrooms) {
+  let numBedrooms = bedrooms;
+  let numBathrooms = bathrooms;
+
+  return function houseDescription(){
+    console.log(`This house has ${numBedrooms} bedrooms and ${numBathrooms}.`);
+  };
+}
+
+//Build a house with a unique number of bedrooms and bathrooms
+let myHouse = houseBuilder(4, 2);
+
+//This will log out the number of Bedrooms and bathrooms in the house.
+myHouse();
+
+
+
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
