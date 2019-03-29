@@ -102,3 +102,12 @@ function removeDuplicates(array, cb) {
 removeDuplicates(names, function(arr){
   console.log(arr);
 });
+
+
+
+
+//IIFE
+
+(function(){
+  console.log(`I am an IIFE and I run as soon as the page loads without being called!`);
+})();
