@@ -87,8 +87,18 @@ contains('yo-yo', items, function(isInList, item){
 
 /* STRETCH PROBLEM */
 
+//Array to use
+let names = ['Sean', 'John', 'Nancy', 'John', 'Paul', 'Sean', 'Tim'];
+
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+
+  let uniqueArr = new Set(array);
+  cb(uniqueArr);
 }
+
+removeDuplicates(names, function(arr){
+  console.log(arr);
+});
